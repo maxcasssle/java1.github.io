@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Purchase Calculator</title>
+</head>
+
+<body>
+    <script>
+        let chickenPriceKg = 500
+
+        let purchaseChicken = prompt("Enter the chicken purchased (in grams):");
+        purchaseChicken = parseFloat(purchaseChicken); // Convert input to a number
+
+        let pricePerGram = chickenPriceKg / 1000;
+
+    
+        let price = purchaseChicken * pricePerGram;
+
+        console.log("Purchase Details");
+        console.log("Amount: " + chickenPriceKg + " kg");
+        console.log("Qty: " + purchaseChicken + " grams");
+        console.log("Total Amount " + price.toFixed(2) + "");
+    </script>
+</body>
+
+</html>
